@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "postgresq-checkpoint"
+version = "0.1.0"
+description = ""
+authors = ["jjovalle99 <jj.ovalle@uniandes.edu.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.11"
+langchain = "^0.2.3"
+psycopg = {extras = ["binary"], version = "^3.1.19"}
+langgraph = "^0.0.66"
+langchain-openai = "^0.1.8"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
